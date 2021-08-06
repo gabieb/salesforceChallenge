@@ -1,18 +1,31 @@
-# Salesforce DX Project: Next Steps
+QuickOps - Salesforce Challenge
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Apex Classes
+- relatedListviewController
+- relatedListviewControllerTest
 
-## How Do You Plan to Deploy Your Changes?
+LWC
+- relatedListview
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Aura
+- relatedListviewHeader
 
-## Configure Your Salesforce DX Project
+Objects
+- A__c
+- B__c
+- C__c
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+Custom Fields
+- B__c.A__c
+- C__c.B__c
 
-## Read All About It
+Custom Tab
+- A__c
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+Flexi Page
+- A_RecordPage
+
+Layout
+- A__c-Layout de A
+- B__c-Layout de B
+- C__c-Layout de C
