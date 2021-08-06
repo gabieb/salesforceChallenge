@@ -1,0 +1,70 @@
+<!--
+@description       : Component that shows the related list header and calls lwc data table
+@author            : Gabriela
+@group             : 
+@last modified on  : 08-04-2021
+@last modified by  : Gabriela
+-->
+<aura:component implements="flexipage:availableForAllPageTypes,force:lightningQuickAction,force:hasRecordId" access="global">
+
+<aura:attribute name="recordCount" type="Decimal"/>
+<aura:attribute name="recordId" type="String" />
+<aura:attribute name="showTable" type="Boolean" default="true" />
+
+<div style="background-color: white; border-radius: 4px; min-width:700px"> 
+    <div class="componentPadding">
+    <!-- Header Begin -->
+    <div class="slds-page-header pageHeader">
+        <lightning:layout pullToBoundary="medium">
+            <lightning:layoutItem flexibility="auto" padding="horizontal-medium">
+                <div class="slds-page-header__row">
+                    <div class="slds-page-header__col-title">
+                        <div class="slds-media">
+                            <div class="slds-media__figure" style="padding-top:5px">
+                                <span class="slds-icon_container slds-icon-standard-letterhead" >
+                                    <lightning:icon class="iconSize" iconName="standard:letterhead"/>
+                                </span>
+                            </div>
+                            <div class="slds-media__body">
+                                <div class="slds-page-header__name">
+                                    <div class="slds-page-header__name-title">
+                                        <h1>
+                                            <span class="fontsize">Related Records</span>
+                                            <lightning:layout>
+                                                <lightning:layoutItem >
+                                                    <span class="slds-page-header__title slds-truncate" style="font-size: 18px;" title="BC">B and C</span>
+                                                </lightning:layoutItem>
+                                            </lightning:layout>
+                                        </h1>
+                                    </div>
+                                </div>
+                                
+                                <button style="background-color:white; margin-left:4px; float:right" class="slds-button slds-button_icon slds-button_icon-border buttonSize" type="button" title="Refresh" onclick="{!c.refreshParent}">
+                                    <lightning:icon aura:id="changeIt" iconName="utility:refresh" size="xx-small"/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-page-header__row">
+                    <div class="slds-page-header__col-meta">
+                        <p class="slds-page-header__meta-text fontsize" style="padding-top: 8px; font-size: small">
+                            {!v.recordCount} Records
+                        </p>
+                    </div>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+    
+    <aura:if isTrue="{!v.showTable}">
+    <div style="padding-top:5px">
+        <c:relatedListview aura:id="relatedListId"
+                            recordId = "{!v.recordId}"
+                            onsizeInformation = "{!c.sizeCalculation}"
+        ></c:relatedListview>
+    </div>
+</aura:if>
+</div>
+</div>
+</aura:component>

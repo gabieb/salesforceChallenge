@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <types>
+        <members>relatedListviewController</members>
+        <members>relatedListviewControllerTest</members>
+        <name>ApexClass</name>
+    </types>
+
+    <types>
+        <members>relatedListviewHeader</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+
+    <types>
+        <members>B__c.A__c</members>
+        <members>C__c.B__c</members>
+        <name>CustomField</name>
+    </types>
+
+    <types>
+        <members>A__c</members>
+        <members>B__c</members>
+        <members>C__c</members>
+        <name>CustomObject</name>
+    </types>
+
+    <types>
+        <members>A__c</members>
+        <name>CustomTab</name>
+    </types>
+
+    <types>
+        <members>A_RecordPage</members>
+        <name>FlexiPage</name>
+    </types>
+
+    <types>
+        <members>A__c-Layout de A</members>
+        <members>B__c-Layout de B</members>
+        <members>C__c-Layout de C</members>
+        <name>Layout</name>
+    </types>
+
+    <types>
+        <members>*</members>
+        <name>LightningComponentBundle</name>
+    </types>
+
+    <version>51.0</version>
+</Package>

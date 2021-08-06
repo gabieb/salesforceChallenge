@@ -1,0 +1,12 @@
+.THIS .componentPadding {
+    padding-top:5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.THIS .buttonSize{
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 32px;
+}
